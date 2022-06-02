@@ -1,0 +1,36 @@
+<!--Tecumseh McMullin-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--this is adding the javascript file-->
+    <script src="HW6.js"></script>
+
+    <!--this is addinc the css file-->
+    <link href="login.css" rel="stylesheet" type="text/css" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--this is where the error messages shows if they input something incorrectly-->
+    <p id="message"></p>
+
+    <!--this makes the page look like a form and allows inputs -->
+    <form onsubmit="return false">
+        <hr>
+        <!--first line of the form and it creates a box for an input-->
+        First Name: &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <input type="text" id="firstName" />
+        <hr>
+        <!--third line of the form and it creates a box for an input-->
+        Last Name: &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <input type="text" id="lastName" />
+        <hr>
+        <!--third line of the form and it creates a box for an input-->
+        Badge Number: &nbsp &nbsp &nbsp &nbsp<input type="text" id="badgeNumber" />
+        <hr>
+    </form>
+
+    <!--this button activates the login() function-->
+    <button onclick="login()">Login</button>
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!--Tecumseh McMullin-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+
+    <!--this is adding the javascript file-->
+    <script src="HW6.js"></script>
+
+    <!--this is addinc the css file-->
+    <link href="HW6.css" rel="stylesheet" type="text/css" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--title of the table-->
+    <title>UAT Space Program</title>
+</head>
+
+<!--this starts the body and runs the function serVariables() so that everything is in the table when the webpage starts-->
+<body onload="javascript:setVariables()">
+
+    <!--the uat logo-->
+    <img src="UATspaceLogo.jpg" align="left">
+
+    <!--the largest header-->
+    <h1>UAT Space Program</h1>
+
+    <!--horizontal line-->
+    <hr>
+
+    <!--the table that holds all the information-->
+    <table>
+
+        <!--this allows each column to be changed in the css file-->
+        <colgroup>
+            <col>
+            <col style="width: 100px;">
+        </colgroup>
+        <tr>
+            <th>Data Type</th>
+            <th>Reading</th>
+        </tr>
+        <tr>
+            <td>Time elapsed:</td>
+            <td id="R1"></td>
+        </tr>
+        <tr>
+            <td>Latitude:</td>
+            <td id="R2"></td>
+        </tr>
+        <tr>
+            <td>Longitude:</td>
+            <td id="R3"></td>
+        </tr>
+        <tr>
+            <td>GPS Altitude:</td>
+            <td id="R4"></td>
+        </tr>
+        <tr>
+            <td>BMP Sensor Altitude:</td>
+            <td id="R5"></td>
+        </tr>
+        <tr>
+            <td>BMP Sensor Pressur:</td>
+            <td id="R6"></td>
+        </tr>
+        <tr>
+            <td>BMP Sensor Temperature:</td>
+            <td id="R7"></td>
+        </tr>
+        <tr>
+            <td>Digital Sensor Temperature:</td>
+            <td id="R8"></td>
+        </tr>
+        <tr>
+            <td>CSS Sensor Temperature:</td>
+            <td id="R9"></td>
+        </tr>
+        <tr>
+            <td>CSS Sensor eC02:</td>
+            <td id="R10"></td>
+        </tr>
+        <tr>
+            <td>CSS Sensor TV0C:</td>
+            <td id="R11"></td>
+        </tr>
+        <tr>
+            <td>UV:</td>
+            <td id="R12"></td>
+        </tr>
+        <tr>
+            <td>Accel X:</td>
+            <td id="R13"></td>
+        </tr>
+        <tr>
+            <td>Accel Y:</td>
+            <td id="R14"></td>
+        </tr>
+        <tr>
+            <td>Accel Z:</td>
+            <td id="R15"></td>
+        </tr>
+        <tr>
+            <td>Magnetic X:</td>
+            <td id="R16"></td>
+        </tr>
+        <tr>
+            <td>Magnetic Y:</td>
+            <td id="R17"></td>
+        </tr>
+        <tr>
+            <td>Magnetic Z:</td>
+            <td id="R18"></td>
+        </tr>
+        <tr>
+            <td>Gyro X:</td>
+            <td id="R19"></td>
+        </tr>
+        <tr>
+            <td>Gyro Y</td>
+            <td id="R20"></td>
+        </tr>
+        <tr>
+            <td>Gyro Z</td>
+            <td id="R21"></td>
+        </tr>
+    </table>
+    <hr>
+
+    <!--this activates the startButtonf() function-->
+    <button onclick="startButtonf()">Start</button>
+
+    <!--this activates the stopButtonf() function-->
+    <button onclick="stopButtonf()">Stop</button>
+
+<!--closing tags-->
+</body>
+</html>
